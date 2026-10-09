@@ -22,9 +22,6 @@ A naive synchronous implementation causes:
 * **Silent Data Loss:** Network hiccups cause failed deliveries to be lost forever.
 * **Noisy Neighbors:** One crashing destination consumes all retry resources, starving healthy destinations.
 
-**The Engineering Question:**  
-*How do you engineer an asynchronous, zero-data-loss event engine that ingests payloads in sub-5ms, protects workers from hostile/failing endpoints, and guarantees delivery without relying on proprietary cloud lock-in?*
-
 ---
 
 ## 03. Problems Solved
